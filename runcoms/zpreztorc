@@ -41,7 +41,6 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
-  'terminal' \
   'utility' \
   'completion'
 
@@ -123,44 +122,10 @@ zstyle ':prezto:module:prompt' show-return-val 'yes'
 
 # Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
-  'builtin' 'bg=blue' \
-  'command' 'bg=blue' \
-  'function' 'bg=blue'
-
-# Set syntax pattern styles.
-zstyle ':prezto:module:syntax-highlighting' pattern 'rm*-rf*' 'fg=white,bold,bg=red'
-
-#
-# Terminal
-#
-
-# Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
-
-# Set the window title format.
-# zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
-
-# Set the tab title format.
-# zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
-
-# Set the terminal multiplexer title format.
-# zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
-
-#
-# Tmux
-#
-
-# Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
-
-# Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
-
-# Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
-
-# Set the default session name:
-# zstyle ':prezto:module:tmux:session' name 'YOUR DEFAULT SESSION NAME'
+  'builtin' 'fg=blue' \
+  'command' 'fg=green' \
+  'function' 'fg=cyan' \
+  'alias' 'fg=magenta'
 
 #
 # Utility
@@ -169,4 +134,5 @@ zstyle ':prezto:module:syntax-highlighting' pattern 'rm*-rf*' 'fg=white,bold,bg=
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' correct 'no'
