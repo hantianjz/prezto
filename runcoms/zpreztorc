@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'helper' \
   'history' \
   'prompt' \
+  'python' \
   'spectrum' \
   'syntax-highlighting' \
   'history-substring-search' \
@@ -182,3 +183,8 @@ zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'yes'
+
+#
+# Python
+#
+zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
