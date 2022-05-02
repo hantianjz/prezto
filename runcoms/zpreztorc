@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'helper' \
   'history' \
   'prompt' \
+  'python' \
   'spectrum' \
   'syntax-highlighting' \
   'history-substring-search' \
@@ -136,3 +137,8 @@ zstyle ':prezto:module:syntax-highlighting' styles \
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'yes'
 zstyle ':prezto:module:utility' correct 'no'
+
+#
+# Python
+#
+zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
