@@ -43,7 +43,9 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'autosuggestions' \
   'utility' \
-  'node' \
+  'homebrew' \
+  'tmux' \
+  'terminal' \
   'completion'
 
 #
